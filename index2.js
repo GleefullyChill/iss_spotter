@@ -11,9 +11,9 @@ const printTimes = (passTimes) => {
 };
 
 nextISSTimesForMyLocation()
-  .then ((passTimes) => {
-  printTimes(passTimes)
+  .then((passTimes) => {
+    printTimes(passTimes);
   })
   .catch((error) => {
-    console.log("They stopped us from telling you 👀", error.message)
-  })
+    console.log("They stopped us from telling you 👀", error.message);
+  });

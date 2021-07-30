@@ -19,7 +19,6 @@ fetchCoordsByIP(ip, (error, geo) => {
   console.log('We found out where you live! Well, only your city\n');
 });
 
-
 fetchISSFlyOverTimes(geo, (error, passTimes) => {
   if (error) {
     console.log(error);
