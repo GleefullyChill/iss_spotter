@@ -32,7 +32,7 @@ const printTimes = (passTimes) => {
   for (const flight of passTimes) {
     const flightTime = new Date(0);
     flightTime.setUTCSeconds(flight.risetime);
-    const duration = pass.duration;
+    const duration = flight.duration;
     console.log(`${flightTime} for ${duration} seconds!`);
   }
 };
